@@ -18,6 +18,7 @@ import mockup from '../views/mockup.vue'
 
 // Shelter Views
 import shelterdashboardContent from '../views/shelter/dashboard.vue'
+//import shelterdashboardContent from '../views/shelter/try.vue'
 import shelterprofile from "../views/shelter/myshelter.vue";
 import shelteranimalprofile from "../views/shelter/animalprofile.vue"
 import rescueoperation from "../views/shelter/rescueoperation.vue"
