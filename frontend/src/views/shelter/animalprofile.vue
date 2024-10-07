@@ -18,7 +18,7 @@ export default {
                     name: 'Eric',
                     petType: 'Bulldog',
                     imageUrl:
-                        require('@/assets/images/animalshelterdog.png'),
+                        require('@/assets/images/homepage.png'),
                 },
                 {
                     name: 'Bals',
@@ -92,7 +92,7 @@ export default {
                 <li v-for="pets in profiles" :key="pets.name"
                     class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center border drop-shadow-md">
                     <div class="flex flex-1 flex-col p-7">
-                        <img class="mx-auto w-52 h-52 flex-shrink-0" :src="pets.imageUrl" alt="" />
+                        <img class="mx-auto w-52 h-52 object-cover flex-shrink-0" :src="pets.imageUrl" alt="" />
                         <h3 class="mt-6 text-sm font-medium text-gray-900">{{ pets.name }}</h3>
                         <dl class="mt-1 flex flex-grow flex-col justify-between">
                             <dt class="sr-only">Aninal Type</dt>

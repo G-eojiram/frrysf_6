@@ -1,8 +1,8 @@
 <script>
 import textvalue from '@/components/textString.vue'
 import datetoday from '@/components/dateCard.vue'
-import profileCard from '@/components/shelter_ProfileCard.vue'
-import detailCard from '@/components/shelter_DetailsCard.vue'
+import profileCard from '@/components/shelter_Myshelter_ProfileCard.vue'
+import detailCard from '@/components/shelter_Myshelter_DetailsCard.vue'
 import linkfooter from '@/components/footerLink.vue'
 
 // pop-up modals

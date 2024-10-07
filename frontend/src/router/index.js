@@ -21,11 +21,12 @@ import shelterdashboardContent from '../views/shelter/dashboard.vue'
 //import shelterdashboardContent from '../views/shelter/try.vue'
 import shelterprofile from "../views/shelter/myshelter.vue";
 import shelteranimalprofile from "../views/shelter/animalprofile.vue"
-import rescueoperation from "../views/shelter/rescueoperation.vue"
+// import rescueoperation from "../views/shelter/rescueoperation.vue"
+import rescueoperation from "../views/shelter/tryop.vue"
 
 // my shelter feed, view post, edit profile
 import shelterfeed from "../components/shelter_NewsfeedCard.vue"
-import shelterviewpost from "../components/shelter_ViewPostCard.vue"
+import shelterviewpost from "../components/shelter_Myshelter_ViewPostCard.vue"
 import editshelterprofile from "../views/shelter/myshelter_EditProfile.vue";
 
 // animal profile

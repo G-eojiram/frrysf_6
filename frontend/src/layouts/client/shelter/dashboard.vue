@@ -169,7 +169,8 @@ import { Bars3Icon, XMarkIcon, IdentificationIcon, HomeModernIcon, ChatBubbleLef
 import { PuzzlePieceIcon, ArrowRightStartOnRectangleIcon } from '@heroicons/vue/20/solid'
 
 //my components for popup modals
-import popupNewpost from '@/components/shelter_NewPostModal.vue'
+// import popupNewpost from '@/components/shelter_NewPostModal.vue'
+import popupNewpost from '@/components/buddy_ReportPostModal.vue'
 import popupNewEvent from '@/components/shelter_EventPostModal.vue'
 // import test from '@/components/pin_MapModal.vue'
 

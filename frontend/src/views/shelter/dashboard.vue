@@ -2,8 +2,8 @@
 import textvalue from '@/components/textString.vue'
 import datetoday from '@/components/dateCard.vue'
 import linkfooter from '@/components/footerLink.vue'
-import updatescard from '@/components/dashboard_Activities.vue';
-import statsCard from '@/components/shelter_statsCard.vue';
+import updatescard from '@/components/shelter_Dashboard_Activities.vue';
+import statsCard from '@/components/shelter_Dashboard_statsCard.vue';
 import displaymap from '@/components/Map.vue';
 
 export default {
@@ -42,11 +42,11 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="sm:w-full lg:w-[30%] border rounded-xl">
-                <div class="py-[1rem] px-[2rem] border-b-2">
+            <div class="sm:w-full lg:w-[30%] lg:h-screen border rounded-xl">
+                <div class="py-[.5rem] px-[2rem] border-b-2">
                     <span class="text-sm font-medium graycolor">Activity</span>
                 </div>
-                <div class="py-[2rem] px-[4rem] flex bg-slate-50">
+                <div class="py-[2rem] px-[4rem] flex xl:justify-center">
                     <updatescard />
                 </div>
             </div>

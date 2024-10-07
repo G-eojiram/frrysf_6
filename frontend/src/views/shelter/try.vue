@@ -2,9 +2,9 @@
 import textvalue from '@/components/textString.vue'
 import datetoday from '@/components/dateCard.vue'
 import linkfooter from '@/components/footerLink.vue'
-import updatescard from '@/components/dashboard_Activities.vue';
+import updatescard from '@/components/shelter_Dashboard_Activities.vue';
 import displaymap from '@/components/Map.vue';
-import statsCard from '@/components/shelter_statsCard.vue';
+import statsCard from '@/components/shelter_Dashboard_statsCard.vue';
 
 export default {
     // beforeMount() {

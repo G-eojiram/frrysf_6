@@ -4,7 +4,7 @@
         <div class="flex items-center space-x-5 sm:justify-center">
             <div class="flex-shrink-0">
                 <div class="relative">
-                    <img class="h-32 w-32 rounded-full" :src="profile.avatar" alt="profile image" />
+                    <img class="h-32 w-32 rounded-full object-cover" :src="profile.avatar" alt="profile image" />
                     <span class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true" />
                 </div>
             </div>
