@@ -1,10 +1,11 @@
 <script>
+import { EyeIcon } from "@heroicons/vue/20/solid";
 import statusbuttons from '@/components/shelter_ReportStatusButtons.vue'
 import { RouterLink } from 'vue-router';
 
 export default {
     components: {
-        statusbuttons
+        statusbuttons, EyeIcon
     },
     data() {
         return {
@@ -60,8 +61,17 @@ export default {
     <div>
         <div v-for="(report, index) in reports" :key="index" class="bg-white shadow-md rounded-lg mb-4">
             <div class="h-[2rem] bg-white border-b-2 rounded-t-lg" />
-            <div class="w-full bg-gray-50 border-b-2">
+            <!-- <div class="w-full bg-gray-50 border-b-2">
                 <img class="mx-auto flex-shrink-0 w-[20rem]" :src="report.imageUrl" alt="image post" />
+            </div> -->
+            <div class="w-full bg-gray-50 border-b-2 relative group">
+                <img class="mx-auto flex-shrink-0 w-[20rem] group-hover:filter group-hover:blur-sm"
+                    :src="report.imageUrl" alt="image post" />
+                <button
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden group-hover:block">
+                    <span class="font-semibold text-sm text-white">View Details </span>
+                    <!-- <EyeIcon class="h-9 w-9 text-white" /> -->
+                </button>
             </div>
             <div class="px-[2rem] py-3 text-gray-700 grid gap-y-1">
                 <p class=" border-b-2 py-3 font-semibold text-sm">{{ report.caption }}</p>
@@ -77,8 +87,10 @@ export default {
                     </span>
                     <span class="flex gap-5 text-sm items-center">
                         Reported by:
-                        <RouterLink to="" class="font-bold text-base cursor-pointer underline">
-                            {{ report.username }}</RouterLink>
+                        <RouterLink to="" class="font-bold text-base">
+                            <span class="underline  cursor-pointer">{{ report.username }}</span>
+                            <span class="text-[12px] font-medium border rounded-xl ml-3 px-2">badge</span>
+                        </RouterLink>
                     </span>
                 </div>
             </div>

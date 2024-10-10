@@ -2,7 +2,7 @@
 import textvalue from '@/components/textString.vue'
 import datetoday from '@/components/dateCard.vue'
 import linkfooter from '@/components/footerLink.vue'
-import reports from '@/components/shelter_ReportsCard.vue'
+import reports from '@/components/shelter_RescueOp_ReportsCard.vue'
 import chats from '@/components/shelter_RescueOp_ChatBox.vue'
 
 export default {

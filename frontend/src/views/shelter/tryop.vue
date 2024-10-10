@@ -15,6 +15,7 @@
             <div class="pt-4 mx-auto flex justify-center">
                 <div class="w-fit">
                     <reports/>
+                    <!-- <reportview/> -->
                 </div>
             </div>
         </div>
@@ -28,12 +29,13 @@
 import textvalue from '@/components/textString.vue'
 import datetoday from '@/components/dateCard.vue'
 import linkfooter from '@/components/footerLink.vue'
-import reports from '@/components/shelter_ReportsCard.vue'
+import reports from '@/components/shelter_RescueOp_ReportsCard.vue'
+import reportview from '@/components/shelter_RescueOp_ViewReport.vue'
 import chats from '@/components/shelter_RescueOp_ChatBox.vue'
 
 export default {
     components: {
-        textvalue, datetoday, linkfooter, reports, chats
+        textvalue, datetoday, linkfooter, reports, chats, reportview
     },
     data() {
         const tabs = [

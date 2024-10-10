@@ -22,9 +22,11 @@
                         <div class="border-t p-2 px-4 cursor-pointer hover:bg-gray-50"
                             :class="{ 'bg-gray-100': JSON.stringify(conversation) === JSON.stringify(selectedConversation.messages) }">
                             <div class="flex justify-between">
-                                <span class="font-medium truncate">{{ conversation[0].to === 'me' ? conversation[0].from :
+                                <span class="font-medium truncate">{{ conversation[0].to === 'me' ? conversation[0].from
+                                    :
                                     conversation[0].to }}</span>
-                                <span class="text-[12px] sm:hidden xl:flex">{{ getLastMessage(conversation).timestamp }}</span>
+                                <span class="text-[12px] sm:hidden xl:flex">{{ getLastMessage(conversation).timestamp
+                                    }}</span>
                             </div>
                             <p class="text-sm truncate">{{ getLastMessage(conversation).message }}</p>
                         </div>
@@ -40,6 +42,7 @@
             <div class="flex-1 overflow-y-auto px-4 bg-gray-50">
                 <div v-for="(message, messageIndex) in sortedMessages" :key="messageIndex">
                     <div v-if="message.from !== 'me'" class="flex text-sm text-gray-600 p-3 justify-start">
+                        <span>{{ message.timestamp }}</span>
                         <div>
                             <span v-if="messageIndex === 0 || message.from !== sortedMessages[messageIndex - 1].from"
                                 class="font-medium">{{ message.from }}</span>
@@ -51,11 +54,11 @@
                     </div>
                     <div v-else class="flex text-sm text-gray-600 p-3 justify-end">
                         <div>
-                            <span v-if="messageIndex === 0 || message.from !== sortedMessages[messageIndex - 1].from"
-                                class="font-medium">me</span>
+                            <!-- <span v-if="messageIndex === 0 || message.from !== sortedMessages[messageIndex - 1].from"
+                                class="font-medium">me</span> -->
                             <div
-                                class="mt-2 border w-fit text-gray-600 py-3 px-6 rounded-t-lg rounded-l-lg bg-teal-200">
-                                <p >{{ message.message }}</p>
+                                class="mt-2 border w-fit sm:ml-12 md:ml-40 lg:ml-60 xl:ml-96 text-gray-600 py-3 px-6 rounded-t-lg rounded-l-lg bg-teal-200">
+                                <p>{{ message.message }}</p>
                             </div>
                         </div>
                     </div>
@@ -65,7 +68,7 @@
                 <div class="mt-auto flex border items-center">
                     <div class="flex justify-start w-full">
                         <textarea name="message" id="" placeholder="Write a message..."
-                        class="w-full px-6 py-6 outline-none" />
+                            class="w-full px-6 py-6 outline-none" />
                     </div>
                     <div class="flex px-6 gap-x-3 justify-end">
                         <PaperClipIcon class="h-7 w-7 text-gray-400" aria-hidden="true" />
@@ -83,7 +86,7 @@
 </template>
 
 <script>
-import { MagnifyingGlassIcon, PaperAirplaneIcon, PaperClipIcon  } from "@heroicons/vue/20/solid";
+import { MagnifyingGlassIcon, PaperAirplaneIcon, PaperClipIcon } from "@heroicons/vue/20/solid";
 
 export default {
     components: {
